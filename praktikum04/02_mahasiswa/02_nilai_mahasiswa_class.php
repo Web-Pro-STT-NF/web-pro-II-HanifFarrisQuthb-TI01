@@ -10,57 +10,65 @@ class NilaiMahasiswa{
         $this -> nilai = $nilai;
     }
 
-    function status($nilai){
-        if($nilai > 55){
+    function print(){
+        echo 'NIM : ' . $this -> nim;
+        echo '<br>Mata Kuliah : ' . $this -> matkul;
+        echo '<br>Nilai : ' . $this -> nilai;
+    }
+
+    function status(){
+        if($this -> nilai > 55){
             return 'Lulus';
         } else {
             return 'Tidak Lulus';
         }
     }
     
-    function grade($nilai){
-        if($nilai > 100){
-            return "I";
-        } elseif ($nilai > 84) {
-            return "A";
-        } elseif ($nilai > 69) {
-            return "B";
-        } elseif ($nilai > 55) {
-            return "C";
-        } elseif ($nilai > 35) {
-            return "D";
-        } elseif ($nilai > 0) {
-            return "E";
+    function grade(){
+        if($this -> nilai > 100){
+            $grade = "I";
+        } elseif ($this -> nilai > 84) {
+            $grade = "A";
+        } elseif ($this -> nilai > 69) {
+            $grade = "B";
+        } elseif ($this -> nilai > 55) {
+            $grade = "C";
+        } elseif ($this -> nilai > 35) {
+            $grade = "D";
+        } elseif ($this -> nilai > 0) {
+            $grade = "E";
         } else{
-            return "I";
+            $grade = "I";
         }
+
+        return $grade;
     }
     
-    function predikat($grade){
-        switch ($grade) {
-            case "E":
-                return "Sangat Kurang";
-                break;
+    // function predikat(){
+    //     switch ($this -> grade) {
+    //         case "E":
+    //             return "Sangat Kurang";
+    //             break;
     
-            case 'D':
-                return "Kurang";
-                break;
+    //         case 'D':
+    //             return "Kurang";
+    //             break;
             
-            case 'C':
-                return "Cukup";
-                break;
+    //         case 'C':
+    //             return "Cukup";
+    //             break;
     
-            case 'B':
-                return "Memuaskan";
-                break;
+    //         case 'B':
+    //             return "Memuaskan";
+    //             break;
     
-            case 'A':
-                return "Sangat Memuaskan";
-                break;
+    //         case "A":
+    //             return "Sangat Memuaskan";
+    //             break;
     
-            default:
-                return   "Error with your Inputs";
-                break;
-        }
-    }
+    //         default:
+    //             return "Error with your Inputs";
+    //             break;
+    //     }
+    // }
 }
