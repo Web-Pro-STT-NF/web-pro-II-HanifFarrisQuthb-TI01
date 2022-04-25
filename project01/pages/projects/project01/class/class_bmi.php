@@ -13,13 +13,15 @@ class BMI{
 
     function status(){
         if ($this -> nilai() < 18.5){
-            return "Kekurangan Berat Badan";
+            return "Underweight";
         } elseif ($this -> nilai() >= 18.5 && $this -> nilai() < 25) {
             return "Normal (Ideal)";
         } elseif ($this -> nilai() >= 25 && $this -> nilai() < 30) {
-            return "Kelebihan Berat Badan";
-        } elseif ($this -> nilai() >= 30) {
-            return "Obesitas";
+            return "Overweight";
+        } elseif ($this -> nilai() >= 30 && $this -> nilai() < 35) {
+            return "Obese";
+        } elseif ($this -> nilai() < 35) {
+            return "Extremly Obese";
         }
     }
 }
