@@ -8,20 +8,18 @@ class BMI{
         $tb = $this -> tinggi / 100;
         $hasil = $this -> berat / ($tb * $tb);
 
-        return number_format($hasil, 2);
+        return number_format($hasil, 1);
     }
 
     function status(){
         if ($this -> nilai() < 18.5){
             return "Underweight";
         } elseif ($this -> nilai() >= 18.5 && $this -> nilai() < 25) {
-            return "Normal (Ideal)";
+            return "Normal";
         } elseif ($this -> nilai() >= 25 && $this -> nilai() < 30) {
             return "Overweight";
-        } elseif ($this -> nilai() >= 30 && $this -> nilai() < 35) {
+        } elseif ($this -> nilai() >= 30) {
             return "Obese";
-        } elseif ($this -> nilai() < 35) {
-            return "Extremly Obese";
         }
     }
 }

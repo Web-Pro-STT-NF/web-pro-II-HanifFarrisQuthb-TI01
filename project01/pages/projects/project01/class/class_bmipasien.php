@@ -6,7 +6,7 @@ class BMIPasien extends BMI{
     use Pasien;
     public $tanggal;
 
-    function __construct($kode, $nama, $jk, $tanggal, $berat, $tinggi){
+    function __construct($tanggal, $kode, $nama, $jk, $berat, $tinggi){
         $this -> kode = $kode;
         $this -> nama = $nama;
         $this -> jk = $jk;
@@ -15,27 +15,27 @@ class BMIPasien extends BMI{
         $this -> tinggi = $tinggi;
     }
 
-    function GetKode(){
+    function kode(){
         return $this -> kode;
     }
 
-    function GetNama(){
+    function nama(){
         return $this -> nama;
     }
 
-    function GetJK(){
+    function jk(){
         return $this -> jk;
     }
 
-    function GetTanggal(){
+    function tanggal(){
         return $this -> tanggal;
     }
 
-    function GetBerat(){
+    function berat(){
         return $this -> berat;
     }
 
-    function GetTinggi(){
+    function tinggi(){
         return $this -> tinggi;
     }
 }
