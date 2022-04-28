@@ -147,7 +147,7 @@
     $_tinggi = $_POST['tinggi'];
     
     $tinggimeter = $_tinggi / 100;
-    $nilai = $_berat / ($tinggimeter * $tinggimeter);
+    $nilai = ($tinggimeter != 0) ? $_berat / ($tinggimeter * $tinggimeter) : 0;
 
     $_namaone = explode(' ',trim($_nama));
 
