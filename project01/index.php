@@ -55,6 +55,30 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
+        <div class="row">
+          <!-- Map card -->
+          <div class="card bg-gradient-primary col-4">
+              <div class="card-header border-0">
+                <h3 class="card-title">
+                  <i class="fas fa-map-marker-alt mr-1"></i>
+                  Information
+                </h3>
+                <!-- card tools -->
+                <div class="card-tools">
+                  <button type="button" class="btn btn-primary btn-sm" data-card-widget="collapse" title="Collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                </div>
+                <!-- /.card-tools -->
+              </div>
+              <div class="card-body">
+                <div>All of the content is on the Sidebar!</div>
+                <div>Upon ======== AdminLTE ========</div>
+              </div>
+              </div>
+            </div>
+            <!-- /.card -->
+        </div>
         <!-- Small boxes (Stat box) -->
         <div class="row">
           <div class="col-lg-3 col-6">
