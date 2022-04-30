@@ -99,6 +99,35 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
+                    Praktikum02
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="index_praktikum02_01_form_nilai.php" class="nav-link">
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>01_form_nilai</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index_praktikum02_02_form_belanja.php" class="nav-link">
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>02_form_belanja</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index_praktikum02_03_nilai_siswa.php" class="nav-link">
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>03_nilai_siswa</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
                 <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Top Navigation + Sidebar</p>
